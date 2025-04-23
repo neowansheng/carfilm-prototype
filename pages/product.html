@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品详情 - CarFilm</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100 h-screen">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <span>14:21</span>
+        <div>
+            <span class="mr-1"><i class="fas fa-signal"></i></span>
+            <span class="mr-1"><i class="fas fa-wifi"></i></span>
+            <span><i class="fas fa-battery-three-quarters"></i></span>
+        </div>
+    </div>
+    
+    <!-- 导航栏 -->
+    <div class="nav-bar">
+        <a href="home.html" class="nav-back"><i class="fas fa-chevron-left"></i></a>
+        <h1 class="nav-title">产品详情</h1>
+    </div>
+    
+    <div class="main-content">
+        <!-- 产品轮播图 -->
+        <div class="relative w-full h-64 bg-gray-200">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
+            <div class="absolute bottom-4 right-4 bg-black bg-opacity-50 text-white text-xs px-2 py-1 rounded-full">1/4</div>
+        </div>
+        
+        <!-- 产品信息 -->
+        <div class="bg-white p-4">
+            <h1 class="text-xl font-bold mb-1">晶钻系列 - 全车防爆隔热膜</h1>
+            <div class="flex items-center mb-2">
+                <span class="bg-blue-100 text-blue-600 text-xs px-2 py-0.5 rounded mr-2">高端系列</span>
+                <span class="bg-green-100 text-green-600 text-xs px-2 py-0.5 rounded">10年质保</span>
+            </div>
+            <div class="flex items-center">
+                <span class="text-red-500 text-xl font-bold mr-2">¥2599起</span>
+                <span class="text-gray-400 text-sm line-through">¥3299</span>
+            </div>
+        </div>
+        
+        <!-- 产品规格 -->
+        <div class="bg-white mt-2 p-4">
+            <h2 class="font-bold mb-3">产品规格</h2>
+            <div class="grid grid-cols-3 gap-2">
+                <div class="bg-gray-50 p-2 rounded text-center">
+                    <p class="text-xs text-gray-500">隔热率</p>
+                    <p class="font-medium text-sm">95%</p>
+                </div>
+                <div class="bg-gray-50 p-2 rounded text-center">
+                    <p class="text-xs text-gray-500">紫外线阻隔</p>
+                    <p class="font-medium text-sm">99%</p>
+                </div>
+                <div class="bg-gray-50 p-2 rounded text-center">
+                    <p class="text-xs text-gray-500">可见光透过率</p>
+                    <p class="font-medium text-sm">70%</p>
+                </div>
+                <div class="bg-gray-50 p-2 rounded text-center">
+                    <p class="text-xs text-gray-500">红外线阻隔</p>
+                    <p class="font-medium text-sm">90%</p>
+                </div>
+                <div class="bg-gray-50 p-2 rounded text-center">
+                    <p class="text-xs text-gray-500">厚度</p>
+                    <p class="font-medium text-sm">2.0mil</p>
+                </div>
+                <div class="bg-gray-50 p-2 rounded text-center">
+                    <p class="text-xs text-gray-500">颜色</p>
+                    <p class="font-medium text-sm">深灰/浅灰</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 产品描述 -->
+        <div class="bg-white mt-2 p-4">
+            <h2 class="font-bold mb-3">产品特点</h2>
+            <div class="text-sm text-gray-700 leading-relaxed">
+                <p class="mb-2">• 采用纳米陶瓷材料，有效阻隔95%以上的热量辐射</p>
+                <p class="mb-2">• 99%紫外线阻隔，保护车内皮革不开裂老化</p>
+                <p class="mb-2">• 优质防爆层，增强玻璃安全性</p>
+                <p class="mb-2">• 高清晰度，不影响夜间驾驶视野</p>
+                <p>• 十年质保，终身售后服务</p>
+            </div>
+        </div>
+        
+        <!-- 用户评价 -->
+        <div class="bg-white mt-2 p-4">
+            <div class="flex justify-between items-center mb-3">
+                <h2 class="font-bold">用户评价</h2>
+                <span class="text-sm text-gray-500">查看全部 <i class="fas fa-chevron-right text-xs"></i></span>
+            </div>
+            <div class="mb-3">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-gray-200 mr-2 overflow-hidden">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium">王先生</p>
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">贴了一个月了，效果非常好，夏天开车明显感觉车内温度降低了，而且晚上视线也很清晰，不影响夜间行车，非常满意！</p>
+            </div>
+            <div>
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-gray-200 mr-2 overflow-hidden">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium">李女士</p>
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">店家服务态度很好，安装也很专业。膜质量不错，就是价格稍微有点贵，但总体还是值得推荐的。</p>
+            </div>
+        </div>
+        
+        <!-- 推荐产品 -->
+        <div class="bg-white mt-2 p-4 mb-32">
+            <h2 class="font-bold mb-3">相关推荐</h2>
+            <div class="flex overflow-x-auto space-x-3">
+                <div class="flex-shrink-0 w-32">
+                    <div class="h-24 bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-xs font-medium mt-1">钻石系列陶瓷膜</p>
+                    <p class="text-xs text-red-500">¥2099起</p>
+                </div>
+                <div class="flex-shrink-0 w-32">
+                    <div class="h-24 bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-xs font-medium mt-1">纳米碳膜全车套餐</p>
+                    <p class="text-xs text-red-500">¥1899起</p>
+                </div>
+                <div class="flex-shrink-0 w-32">
+                    <div class="h-24 bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-xs font-medium mt-1">太阳膜前档套装</p>
+                    <p class="text-xs text-red-500">¥899起</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部购买栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex items-center p-3">
+        <div class="flex items-center mr-3">
+            <a href="#" class="w-10 h-10 flex items-center justify-center text-gray-500">
+                <i class="far fa-heart text-xl"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center text-gray-500">
+                <i class="far fa-comment-alt text-xl"></i>
+            </a>
+        </div>
+        <a href="preview.html" class="flex-1 py-2.5 bg-blue-100 text-blue-500 font-medium rounded-full text-center mr-2">
+            预览效果
+        </a>
+        <a href="order.html" class="flex-1 py-2.5 bg-blue-500 text-white font-medium rounded-full text-center">
+            立即购买
+        </a>
+    </div>
+</body>
+</html>

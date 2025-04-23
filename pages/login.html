@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - CarFilm</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-white h-screen">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <span>14:21</span>
+        <div>
+            <span class="mr-1"><i class="fas fa-signal"></i></span>
+            <span class="mr-1"><i class="fas fa-wifi"></i></span>
+            <span><i class="fas fa-battery-three-quarters"></i></span>
+        </div>
+    </div>
+    
+    <div class="p-6">
+        <!-- 返回按钮 -->
+        <a href="profile.html" class="inline-block mb-6">
+            <i class="fas fa-chevron-left text-gray-600"></i>
+        </a>
+        
+        <!-- 品牌Logo -->
+        <div class="text-center mb-10">
+            <h1 class="text-3xl font-bold mb-2">CarFilm<span class="text-blue-500">车膜</span></h1>
+            <p class="text-gray-500">汽车贴膜专业定制</p>
+        </div>
+        
+        <!-- 登录表单 -->
+        <div class="mb-8">
+            <div class="mb-4">
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">手机号</label>
+                <div class="flex items-center border-b border-gray-300 pb-2">
+                    <i class="fas fa-mobile-alt text-gray-400 mr-3"></i>
+                    <input type="tel" id="phone" placeholder="请输入手机号" class="w-full outline-none">
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <label for="password" class="block text-sm font-medium text-gray-700 mb-1">密码</label>
+                <div class="flex items-center border-b border-gray-300 pb-2">
+                    <i class="fas fa-lock text-gray-400 mr-3"></i>
+                    <input type="password" id="password" placeholder="请输入密码" class="w-full outline-none">
+                    <button><i class="far fa-eye-slash text-gray-400"></i></button>
+                </div>
+            </div>
+            
+            <div class="flex justify-between mb-6">
+                <div class="flex items-center">
+                    <input type="checkbox" id="remember" class="h-4 w-4 text-blue-500 rounded mr-2">
+                    <label for="remember" class="text-sm text-gray-600">记住我</label>
+                </div>
+                <a href="#" class="text-sm text-blue-500">忘记密码?</a>
+            </div>
+            
+            <button class="w-full bg-blue-500 text-white py-3 rounded-lg font-medium">
+                登录
+            </button>
+        </div>
+        
+        <!-- 其他登录方式 -->
+        <div class="mb-6">
+            <div class="flex items-center justify-center mb-4">
+                <div class="h-px bg-gray-300 flex-1"></div>
+                <span class="mx-4 text-sm text-gray-500">其他登录方式</span>
+                <div class="h-px bg-gray-300 flex-1"></div>
+            </div>
+            
+            <div class="flex justify-center space-x-6">
+                <button class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center">
+                    <i class="fab fa-weixin text-green-600 text-xl"></i>
+                </button>
+                <button class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center">
+                    <i class="fab fa-qq text-blue-500 text-xl"></i>
+                </button>
+                <button class="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center">
+                    <i class="fas fa-mobile-alt text-red-500 text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 注册提示 -->
+        <div class="text-center">
+            <p class="text-gray-600">
+                还没有账号? <a href="#" class="text-blue-500 font-medium">立即注册</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

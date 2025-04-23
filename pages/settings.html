@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置 - CarFilm</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100 h-screen">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <span>14:21</span>
+        <div>
+            <span class="mr-1"><i class="fas fa-signal"></i></span>
+            <span class="mr-1"><i class="fas fa-wifi"></i></span>
+            <span><i class="fas fa-battery-three-quarters"></i></span>
+        </div>
+    </div>
+    
+    <!-- 导航栏 -->
+    <div class="nav-bar">
+        <a href="profile.html" class="nav-back"><i class="fas fa-chevron-left"></i></a>
+        <h1 class="nav-title">设置</h1>
+    </div>
+    
+    <div class="main-content">
+        <!-- 账户设置 -->
+        <div class="bg-white mb-3">
+            <div class="p-4 border-b border-gray-100">
+                <h2 class="text-gray-500 text-sm">账户设置</h2>
+            </div>
+            
+            <a href="#" class="flex justify-between items-center p-4 border-b border-gray-100">
+                <div class="flex items-center">
+                    <i class="fas fa-user-circle text-gray-500 mr-4"></i>
+                    <span>个人资料</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-300"></i>
+            </a>
+            
+            <a href="#" class="flex justify-between items-center p-4 border-b border-gray-100">
+                <div class="flex items-center">
+                    <i class="fas fa-lock text-gray-500 mr-4"></i>
+                    <span>账号安全</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-300"></i>
+            </a>
+            
+            <a href="#" class="flex justify-between items-center p-4">
+                <div class="flex items-center">
+                    <i class="fas fa-shield-alt text-gray-500 mr-4"></i>
+                    <span>隐私设置</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-300"></i>
+            </a>
+        </div>
+        
+        <!-- 通知设置 -->
+        <div class="bg-white mb-3">
+            <div class="p-4 border-b border-gray-100">
+                <h2 class="text-gray-500 text-sm">通知设置</h2>
+            </div>
+            
+            <div class="flex justify-between items-center p-4 border-b border-gray-100">
+                <div class="flex items-center">
+                    <i class="fas fa-bell text-gray-500 mr-4"></i>
+                    <span>推送通知</span>
+                </div>
+                <label class="relative inline-block w-10 h-6">
+                    <input type="checkbox" class="opacity-0 w-0 h-0" checked>
+                    <span class="absolute inset-0 rounded-full bg-blue-500 transition duration-300"></span>
+                    <span class="absolute right-1 top-1 w-4 h-4 rounded-full bg-white transition duration-300"></span>
+                </label>
+            </div>
+            
+            <div class="flex justify-between items-center p-4">
+                <div class="flex items-center">
+                    <i class="fas fa-tag text-gray-500 mr-4"></i>
+                    <span>促销消息</span>
+                </div>
+                <label class="relative inline-block w-10 h-6">
+                    <input type="checkbox" class="opacity-0 w-0 h-0">
+                    <span class="absolute inset-0 rounded-full bg-gray-300 transition duration-300"></span>
+                    <span class="absolute left-1 top-1 w-4 h-4 rounded-full bg-white transition duration-300"></span>
+                </label>
+            </div>
+        </div>
+        
+        <!-- 应用设置 -->
+        <div class="bg-white mb-3">
+            <div class="p-4 border-b border-gray-100">
+                <h2 class="text-gray-500 text-sm">应用设置</h2>
+            </div>
+            
+            <a href="#" class="flex justify-between items-center p-4 border-b border-gray-100">
+                <div class="flex items-center">
+                    <i class="fas fa-language text-gray-500 mr-4"></i>
+                    <span>语言</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-gray-400 mr-2">简体中文</span>
+                    <i class="fas fa-chevron-right text-gray-300"></i>
+                </div>
+            </a>
+            
+            <a href="help.html" class="flex justify-between items-center p-4 border-b border-gray-100">
+                <div class="flex items-center">
+                    <i class="fas fa-question-circle text-gray-500 mr-4"></i>
+                    <span>帮助与反馈</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-300"></i>
+            </a>
+            
+            <a href="#" class="flex justify-between items-center p-4 border-b border-gray-100">
+                <div class="flex items-center">
+                    <i class="fas fa-info-circle text-gray-500 mr-4"></i>
+                    <span>关于我们</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-300"></i>
+            </a>
+            
+            <div class="flex justify-between items-center p-4">
+                <div class="flex items-center">
+                    <i class="fas fa-trash-alt text-gray-500 mr-4"></i>
+                    <span>清除缓存</span>
+                </div>
+                <span class="text-gray-400">12.5MB</span>
+            </div>
+        </div>
+        
+        <!-- 退出登录 -->
+        <div class="p-4">
+            <button class="w-full py-3 text-red-500 font-medium bg-white rounded-lg">
+                退出登录
+            </button>
+        </div>
+        
+        <div class="text-center text-xs text-gray-400 mt-6 mb-10">
+            <p>CarFilm 车膜 v1.0.0</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>质保信息 - CarFilm</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100 h-screen">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <span>14:21</span>
+        <div>
+            <span class="mr-1"><i class="fas fa-signal"></i></span>
+            <span class="mr-1"><i class="fas fa-wifi"></i></span>
+            <span><i class="fas fa-battery-three-quarters"></i></span>
+        </div>
+    </div>
+    
+    <!-- 导航栏 -->
+    <div class="nav-bar">
+        <a href="profile.html" class="nav-back"><i class="fas fa-chevron-left"></i></a>
+        <h1 class="nav-title">电子质保</h1>
+    </div>
+    
+    <div class="main-content">
+        <!-- 电子质保卡 -->
+        <div class="mx-4 mt-4 bg-gradient-to-r from-blue-600 to-blue-400 rounded-xl overflow-hidden text-white shadow-lg">
+            <div class="p-4 border-b border-blue-300 border-opacity-30 flex items-center justify-between">
+                <div>
+                    <p class="text-blue-100 text-xs">电子质保卡</p>
+                    <h2 class="font-bold text-lg">晶钻系列 - 全车防爆隔热膜</h2>
+                </div>
+                <div class="bg-white bg-opacity-20 h-12 w-12 rounded-full flex items-center justify-center">
+                    <i class="fas fa-shield-alt text-2xl"></i>
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between mb-2">
+                    <span class="text-blue-100">车辆信息</span>
+                    <span>奥迪 A6L 2022款</span>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <span class="text-blue-100">安装日期</span>
+                    <span>2023年6月20日</span>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <span class="text-blue-100">质保期限</span>
+                    <span>10年</span>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <span class="text-blue-100">质保到期</span>
+                    <span>2033年6月20日</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-blue-100">质保编号</span>
+                    <span>CF2023062001458</span>
+                </div>
+            </div>
+            <div class="p-4 bg-blue-700 bg-opacity-30 text-center">
+                <p class="text-sm">扫码查询质保真伪</p>
+                <div class="h-24 w-24 bg-white mx-auto my-2 rounded flex items-center justify-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" class="h-20 w-20">
+                </div>
+            </div>
+        </div>
+        
+        <!-- 质保详情 -->
+        <div class="bg-white mx-4 mt-4 rounded-xl p-4 shadow-sm">
+            <h3 class="font-bold text-lg mb-3">质保内容</h3>
+            <div class="space-y-2 text-sm">
+                <p>• 10年内产品自身出现气泡、褪色、剥落等现象，免费更换同等级产品</p>
+                <p>• 安装工艺质保2年，包含安装不当引起的气泡、起翘等问题</p>
+                <p>• 全国联保，可在任意CarFilm门店享受售后服务</p>
+                <p>• 非人为损坏，全国免费维修</p>
+            </div>
+        </div>
+        
+        <!-- 维修记录 -->
+        <div class="bg-white mx-4 mt-4 rounded-xl p-4 shadow-sm">
+            <h3 class="font-bold text-lg mb-3">维修记录</h3>
+            <div class="text-center py-6 text-gray-400">
+                <i class="far fa-clipboard text-3xl mb-2"></i>
+                <p>暂无维修记录</p>
+            </div>
+        </div>
+        
+        <!-- 保养提醒 -->
+        <div class="bg-white mx-4 mt-4 rounded-xl p-4 shadow-sm mb-10">
+            <h3 class="font-bold text-lg mb-3">保养提醒</h3>
+            <div class="bg-blue-50 p-3 rounded-lg">
+                <div class="flex">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fas fa-bell text-blue-500"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">首次维护检查</h4>
+                        <p class="text-gray-500 text-sm mt-1">建议安装后30天进行首次检查，确保膜面无异常</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="text-xs text-gray-500">2023年7月20日</span>
+                            <button class="bg-blue-500 text-white text-xs px-3 py-1 rounded">预约</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 p-3 rounded-lg mt-3">
+                <div class="flex">
+                    <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fas fa-sync-alt text-gray-500"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">半年维护检查</h4>
+                        <p class="text-gray-500 text-sm mt-1">建议每半年进行一次专业检查和清洁维护</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="text-xs text-gray-500">2023年12月20日</span>
+                            <button class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded">预约</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 联系客服按钮 -->
+        <div class="fixed bottom-4 left-0 right-0 px-4">
+            <button class="w-full bg-blue-500 text-white font-medium py-3 rounded-full">
+                联系客服
+            </button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>门店选择 - CarFilm</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100 h-screen">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <span>14:21</span>
+        <div>
+            <span class="mr-1"><i class="fas fa-signal"></i></span>
+            <span class="mr-1"><i class="fas fa-wifi"></i></span>
+            <span><i class="fas fa-battery-three-quarters"></i></span>
+        </div>
+    </div>
+    
+    <!-- 导航栏 -->
+    <div class="nav-bar">
+        <h1 class="nav-title">门店选择</h1>
+    </div>
+    
+    <div class="main-content">
+        <!-- 搜索栏 -->
+        <div class="p-4 sticky top-0 bg-white shadow-sm z-10">
+            <div class="bg-gray-100 rounded-full py-2 px-4 flex items-center">
+                <i class="fas fa-search text-gray-400 mr-2"></i>
+                <input type="text" placeholder="搜索附近门店" class="bg-transparent w-full outline-none text-sm">
+            </div>
+            <div class="flex mt-3">
+                <button class="mr-2 px-3 py-1 bg-blue-500 text-white text-sm rounded-full">离我最近</button>
+                <button class="mr-2 px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full">好评优先</button>
+                <button class="px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full">促销活动</button>
+            </div>
+        </div>
+        
+        <!-- 地图视图 -->
+        <div class="w-full h-48 bg-gray-200">
+            <img src="../img/map_shanghai.png" class="w-full h-full object-cover">
+        </div>
+        
+        <!-- 门店列表 -->
+        <div class="bg-white">
+            <!-- 门店1 -->
+            <div class="p-4 border-b border-gray-200">
+                <div class="flex items-start">
+                    <div class="mr-3 w-20 h-20 bg-gray-200 rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1613963931023-5dc59437c8a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold">CarFilm旗舰店-徐家汇店</h3>
+                        <div class="flex items-center text-sm mt-1 mb-1">
+                            <div class="flex text-yellow-400 text-xs mr-1">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-500">4.8分</span>
+                            <span class="mx-2 text-gray-300">|</span>
+                            <span class="text-gray-500">月销量 128</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-1">徐汇区虹桥路188号环贸广场B1-12</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm">距离 2.3km</span>
+                            <div class="flex space-x-2">
+                                <button class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center">
+                                    <i class="fas fa-phone text-blue-500 text-sm"></i>
+                                </button>
+                                <button class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-blue-500 text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 门店2 -->
+            <div class="p-4 border-b border-gray-200">
+                <div class="flex items-start">
+                    <div class="mr-3 w-20 h-20 bg-gray-200 rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1543465077-db45d34b88a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center">
+                            <h3 class="font-bold">CarFilm体验店-静安寺店</h3>
+                            <span class="ml-2 px-1.5 py-0.5 bg-red-100 text-red-500 text-xs rounded">新店</span>
+                        </div>
+                        <div class="flex items-center text-sm mt-1 mb-1">
+                            <div class="flex text-yellow-400 text-xs mr-1">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500">4.1分</span>
+                            <span class="mx-2 text-gray-300">|</span>
+                            <span class="text-gray-500">月销量 92</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-1">静安区南京西路1266号恒隆广场4楼</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm">距离 3.5km</span>
+                            <div class="flex space-x-2">
+                                <button class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center">
+                                    <i class="fas fa-phone text-blue-500 text-sm"></i>
+                                </button>
+                                <button class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-blue-500 text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 门店3 -->
+            <div class="p-4">
+                <div class="flex items-start">
+                    <div class="mr-3 w-20 h-20 bg-gray-200 rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center">
+                            <h3 class="font-bold">CarFilm专业店-浦东店</h3>
+                            <span class="ml-2 px-1.5 py-0.5 bg-blue-100 text-blue-500 text-xs rounded">优惠</span>
+                        </div>
+                        <div class="flex items-center text-sm mt-1 mb-1">
+                            <div class="flex text-yellow-400 text-xs mr-1">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500">5.0分</span>
+                            <span class="mx-2 text-gray-300">|</span>
+                            <span class="text-gray-500">月销量 156</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-1">浦东新区张杨路188号汽车城A区15号</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm">距离 7.8km</span>
+                            <div class="flex space-x-2">
+                                <button class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center">
+                                    <i class="fas fa-phone text-blue-500 text-sm"></i>
+                                </button>
+                                <button class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-blue-500 text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+        <a href="home.html" class="tab-item text-gray-500">
+            <i class="fas fa-home"></i>
+            <span>首页</span>
+        </a>
+        <a href="preview.html" class="tab-item text-gray-500">
+            <i class="fas fa-car"></i>
+            <span>预览</span>
+        </a>
+        <a href="stores.html" class="tab-item active-tab">
+            <i class="fas fa-store"></i>
+            <span>门店</span>
+        </a>
+        <a href="profile.html" class="tab-item text-gray-500">
+            <i class="fas fa-user"></i>
+            <span>我的</span>
+        </a>
+    </div>
+</body>
+</html>

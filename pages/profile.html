@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - CarFilm</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100 h-screen">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <span>14:21</span>
+        <div>
+            <span class="mr-1"><i class="fas fa-signal"></i></span>
+            <span class="mr-1"><i class="fas fa-wifi"></i></span>
+            <span><i class="fas fa-battery-three-quarters"></i></span>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <!-- 用户信息 -->
+        <div class="bg-blue-500 p-4">
+            <div class="flex items-center">
+                <div class="w-16 h-16 rounded-full bg-white overflow-hidden mr-4">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-white font-bold text-lg">张先生</h2>
+                    <p class="text-blue-100 text-sm">普通会员</p>
+                </div>
+                <a href="#" class="text-white">
+                    <i class="fas fa-cog text-xl"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- 订单信息 -->
+        <div class="bg-white p-4 mb-3">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="font-bold">我的订单</h3>
+                <a href="#" class="text-sm text-gray-500">查看全部 <i class="fas fa-chevron-right text-xs"></i></a>
+            </div>
+            <div class="grid grid-cols-4 text-center">
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-credit-card text-blue-500"></i>
+                    </div>
+                    <p class="text-sm">待付款</p>
+                </a>
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-tools text-blue-500"></i>
+                    </div>
+                    <p class="text-sm">待安装</p>
+                </a>
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-check-circle text-blue-500"></i>
+                    </div>
+                    <p class="text-sm">已完成</p>
+                </a>
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-comment-alt text-blue-500"></i>
+                    </div>
+                    <p class="text-sm">待评价</p>
+                </a>
+            </div>
+        </div>
+        
+        <!-- 我的车膜 -->
+        <div class="bg-white p-4 mb-3">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="font-bold">我的车膜</h3>
+                <a href="#" class="text-sm text-gray-500">查看全部 <i class="fas fa-chevron-right text-xs"></i></a>
+            </div>
+            <div class="bg-gray-50 p-3 rounded-lg">
+                <div class="flex items-center">
+                    <div class="w-14 h-14 rounded-lg bg-gray-200 mr-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-medium">晶钻系列 - 全车防爆隔热膜</h4>
+                        <p class="text-gray-500 text-xs mt-1">2023.06.20 安装 · 质保至 2033.06.20</p>
+                        <div class="mt-2">
+                            <a href="warranty.html" class="text-xs px-2 py-1 bg-blue-100 text-blue-500 rounded-full">查看质保</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 功能区 -->
+        <div class="bg-white p-4 mb-3">
+            <div class="grid grid-cols-4 text-center gap-y-6">
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-yellow-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-car text-yellow-500"></i>
+                    </div>
+                    <p class="text-sm">我的车辆</p>
+                </a>
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-ticket-alt text-green-500"></i>
+                    </div>
+                    <p class="text-sm">优惠券</p>
+                </a>
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-purple-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-heart text-purple-500"></i>
+                    </div>
+                    <p class="text-sm">收藏</p>
+                </a>
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-phone-alt text-red-500"></i>
+                    </div>
+                    <p class="text-sm">联系客服</p>
+                </a>
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-map-marker-alt text-blue-500"></i>
+                    </div>
+                    <p class="text-sm">门店地图</p>
+                </a>
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-indigo-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-question-circle text-indigo-500"></i>
+                    </div>
+                    <p class="text-sm">常见问题</p>
+                </a>
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-bell text-orange-500"></i>
+                    </div>
+                    <p class="text-sm">消息</p>
+                </a>
+                <a href="#" class="space-y-1">
+                    <div class="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center mx-auto">
+                        <i class="fas fa-thumbs-up text-gray-500"></i>
+                    </div>
+                    <p class="text-sm">意见反馈</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+        <a href="home.html" class="tab-item text-gray-500">
+            <i class="fas fa-home"></i>
+            <span>首页</span>
+        </a>
+        <a href="preview.html" class="tab-item text-gray-500">
+            <i class="fas fa-car"></i>
+            <span>预览</span>
+        </a>
+        <a href="stores.html" class="tab-item text-gray-500">
+            <i class="fas fa-store"></i>
+            <span>门店</span>
+        </a>
+        <a href="profile.html" class="tab-item active-tab">
+            <i class="fas fa-user"></i>
+            <span>我的</span>
+        </a>
+    </div>
+</body>
+</html>
